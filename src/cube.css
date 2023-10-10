@@ -1,0 +1,191 @@
+.backgroundEffect {
+    position: fixed;
+    z-index: -10;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.backgroundEffect div {
+    position: absolute;
+    display: block;
+    width: 20px;
+    height: 20px;
+    background: #0b0c41;
+    bottom: -300px;
+    animation: animateCube 25s linear infinite;
+}
+
+@keyframes animateCube {
+    0% {
+        opacity: 1;
+        border-radius: 0;
+        transform: translateY(0) rotate(0deg);
+    }
+
+    100% {
+        opacity: 0;
+        border-radius: 50%;
+        transform: translateY(-1000px) rotate(720deg);
+    }
+}
+
+.backgroundEffect div:nth-child(1) {
+    left: 25%;
+    width: 80px;
+    height: 80px;
+    animation-delay: 0s;
+}
+
+.backgroundEffect div:nth-child(2) {
+    left: 10%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 2s;
+    animation-duration: 12s;
+}
+
+.backgroundEffect div:nth-child(3) {
+    left: 30%;
+    width: 100px;
+    height: 100px;
+    animation-delay: 0s;
+    animation-duration: 30s;
+}
+
+.backgroundEffect div:nth-child(4) {
+    left: 50%;
+    width: 30px;
+    height: 30px;
+    animation-delay: 1s;
+    animation-duration: 10s;
+}
+
+.backgroundEffect div:nth-child(5) {
+    left: 60%;
+    width: 200px;
+    height: 200px;
+    animation-delay: 5s;
+    animation-duration: 40s;
+}
+
+.backgroundEffect div:nth-child(6) {
+    left: 70%;
+    width: 80px;
+    height: 80px;
+    animation-delay: 0.4s;
+    animation-duration: 20s;
+}
+
+.backgroundEffect div:nth-child(7) {
+    left: 80%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 1s;
+    animation-duration: 10s;
+}
+
+.backgroundEffect div:nth-child(8) {
+    left: 90%;
+    width: 100px;
+    height: 100px;
+    animation-delay: 0s;
+    animation-duration: 30s;
+}
+
+.backgroundEffect div:nth-child(9) {
+    left: 40%;
+    width: 30px;
+    height: 30px;
+    animation-delay: 1s;
+    animation-duration: 10s;
+}
+
+.backgroundEffect div:nth-child(10) {
+    left: 45%;
+    width: 100px;
+    height: 100px;
+    animation-delay: 5s;
+    animation-duration: 40s;
+}
+
+.backgroundEffect div:nth-child(11) {
+    left: 92%;
+    width: 80px;
+    height: 80px;
+    animation-delay: 0s;
+}
+
+.backgroundEffect div:nth-child(12) {
+    left: 67%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 2s;
+    animation-duration: 12s;
+}
+
+.backgroundEffect div:nth-child(13) {
+    left: 69%;
+    width: 100px;
+    height: 100px;
+    animation-delay: 0s;
+    animation-duration: 30s;
+}
+
+.backgroundEffect div:nth-child(14) {
+    left: 12%;
+    width: 30px;
+    height: 30px;
+    animation-delay: 1s;
+    animation-duration: 10s;
+}
+
+.backgroundEffect div:nth-child(15) {
+    left: 30%;
+    width: 200px;
+    height: 200px;
+    animation-delay: 0s;
+    animation-duration: 20s;
+}
+
+.backgroundEffect div:nth-child(16) {
+    left: 55%;
+    width: 80px;
+    height: 80px;
+    animation-delay: 2s;
+    animation-duration: 13s;
+}
+
+.backgroundEffect div:nth-child(17) {
+    left: 42%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 0s;
+    animation-duration: 14s;
+}
+
+.backgroundEffect div:nth-child(18) {
+    left: 90%;
+    width: 100px;
+    height: 100px;
+    animation-delay: 0s;
+    animation-duration: 30s;
+}
+
+.backgroundEffect div:nth-child(19) {
+    left: 40%;
+    width: 30px;
+    height: 30px;
+    animation-delay: 1s;
+    animation-duration: 10s;
+}
+
+.backgroundEffect div:nth-child(20) {
+    left: 450%;
+    width: 100px;
+    height: 100px;
+    animation-delay: 5s;
+    animation-duration: 40s;
+}

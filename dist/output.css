@@ -16,7 +16,7 @@
   /* 2 */
   border-style: solid;
   /* 2 */
-  border-color: #e5e7eb;
+  border-color: currentColor;
   /* 2 */
 }
 
@@ -534,8 +534,348 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
+.absolute {
+  position: absolute;
+}
+
+.m-0 {
+  margin: 0px;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
 .flex {
   display: flex;
+}
+
+.h-\[100\%\] {
+  height: 100%;
+}
+
+.h-\[50\%\] {
+  height: 50%;
+}
+
+.h-screen {
+  height: 100vh;
+}
+
+.h-fit {
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.h-full {
+  height: 100%;
+}
+
+.h-\[\] {
+  height: ;
+}
+
+.h-\[60\%\] {
+  height: 60%;
+}
+
+.h-\[70\%\] {
+  height: 70%;
+}
+
+.h-\[80\%\] {
+  height: 80%;
+}
+
+.h-9 {
+  height: 2.25rem;
+}
+
+.h-32 {
+  height: 8rem;
+}
+
+.h-\[10\%\] {
+  height: 10%;
+}
+
+.h-\[75\%\] {
+  height: 75%;
+}
+
+.h-\[45\%\] {
+  height: 45%;
+}
+
+.h-\[77\%\] {
+  height: 77%;
+}
+
+.h-\[80p\%\] {
+  height: 80p%;
+}
+
+.h-\[85\%\] {
+  height: 85%;
+}
+
+.h-\[83\%\] {
+  height: 83%;
+}
+
+.h-\[82\%\] {
+  height: 82%;
+}
+
+.h-\[81\%\] {
+  height: 81%;
+}
+
+.h-\[30\%\] {
+  height: 30%;
+}
+
+.h-\[10\] {
+  height: 10;
+}
+
+.w-\[100\%\] {
+  width: 100%;
+}
+
+.w-\[60\%\] {
+  width: 60%;
+}
+
+.w-screen {
+  width: 100vw;
+}
+
+.w-\[50\%\] {
+  width: 50%;
+}
+
+.w-\[40\%\] {
+  width: 40%;
+}
+
+.w-fit {
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.w-\[0\%\] {
+  width: 0%;
+}
+
+.w-\[80\%\] {
+  width: 80%;
+}
+
+.w-\[\] {
+  width: ;
+}
+
+.w-\[45\%\] {
+  width: 45%;
+}
+
+.w-\[47\%\] {
+  width: 47%;
+}
+
+.w-72 {
+  width: 18rem;
+}
+
+.w-48 {
+  width: 12rem;
+}
+
+.w-5 {
+  width: 1.25rem;
+}
+
+.w-56 {
+  width: 14rem;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.items-start {
+  align-items: flex-start;
+}
+
+.items-end {
+  align-items: flex-end;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-start {
+  justify-content: flex-start;
+}
+
+.justify-end {
+  justify-content: flex-end;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.justify-around {
+  justify-content: space-around;
+}
+
+.justify-evenly {
+  justify-content: space-evenly;
+}
+
+.overflow-x-hidden {
+  overflow-x: hidden;
+}
+
+.rounded-3xl {
+  border-radius: 1.5rem;
+}
+
+.bg-background {
+  --tw-bg-opacity: 1;
+  background-color: rgb(6 6 14 / var(--tw-bg-opacity));
+}
+
+.bg-secondary {
+  --tw-bg-opacity: 1;
+  background-color: rgb(11 12 65 / var(--tw-bg-opacity));
+}
+
+.bg-light-background {
+  --tw-bg-opacity: 1;
+  background-color: rgb(14 14 22 / var(--tw-bg-opacity));
+}
+
+.bg-primary {
+  --tw-bg-opacity: 1;
+  background-color: rgb(15 87 86 / var(--tw-bg-opacity));
+}
+
+.text-start {
+  text-align: start;
+}
+
+.text-end {
+  text-align: end;
+}
+
+.align-baseline {
+  vertical-align: baseline;
+}
+
+.align-bottom {
+  vertical-align: bottom;
+}
+
+.align-text-top {
+  vertical-align: text-top;
+}
+
+.align-text-bottom {
+  vertical-align: text-bottom;
+}
+
+.font-clean {
+  font-family: Source Sans Pro, sans-serif;
+}
+
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+.text-6xl {
+  font-size: 3.75rem;
+  line-height: 1;
+}
+
+.text-9xl {
+  font-size: 8rem;
+  line-height: 1;
+}
+
+.text-\[100px\] {
+  font-size: 100px;
+}
+
+.text-\[200px\] {
+  font-size: 200px;
+}
+
+.text-7xl {
+  font-size: 4.5rem;
+  line-height: 1;
+}
+
+.text-\[150px\] {
+  font-size: 150px;
+}
+
+.text-\[70px\] {
+  font-size: 70px;
+}
+
+.text-\[700px\] {
+  font-size: 700px;
+}
+
+.text-\[0px\] {
+  font-size: 0px;
+}
+
+.text-\[2000px\] {
+  font-size: 2000px;
+}
+
+.text-\[1500px\] {
+  font-size: 1500px;
+}
+
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
+.text-5xl {
+  font-size: 3rem;
+  line-height: 1;
+}
+
+.text-\[160px\] {
+  font-size: 160px;
+}
+
+.text-\[10px\] {
+  font-size: 10px;
+}
+
+.text-\[180px\] {
+  font-size: 180px;
+}
+
+.text-\[170px\] {
+  font-size: 170px;
 }
 
 .text-3xl {
@@ -543,15 +883,24 @@ video {
   line-height: 2.25rem;
 }
 
-.text-2xl {
-  font-size: 1.5rem;
-  line-height: 2rem;
+.text-primary {
+  --tw-text-opacity: 1;
+  color: rgb(15 87 86 / var(--tw-text-opacity));
 }
 
-.font-bold {
-  font-weight: 700;
+.text-\[\] {
+  color: ;
 }
 
-.underline {
-  text-decoration-line: underline;
+.text-\[px\] {
+  color: px;
+}
+
+.text-text {
+  --tw-text-opacity: 1;
+  color: rgb(230 230 244 / var(--tw-text-opacity));
+}
+
+.text-\[7xl\] {
+  color: 7xl;
 }
