@@ -6,12 +6,17 @@ module.exports = {
       'clean': ['Source Sans Pro', 'sans-serif']
     },
     colors:{
-      'text': '#e6e6f4',
-      'background': '#06060e',
-      'light-background': '#0E0E16',
-      'primary': '#0f5756',
-      'secondary': '#0b0c41',
-      'accent': '#3bdedb',
+      'text': '#030c06',
+      'background': '#effbf3',
+      'background-dark': '#e3efe7',
+      'primary': '#54cfba',
+      'secondary': '#bfdeed',
+      'accent': '#3185af',
+    },
+    screens: {
+      'xm': '600px',
+      
+      'sm': '1140px',
     },
     extend: {},
   },
