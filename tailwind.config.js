@@ -5,20 +5,28 @@ module.exports = {
     fontFamily: {
       'clean': ['Source Sans Pro', 'sans-serif']
     },
-    colors:{
-      'text': '#030c06',
-      'background': '#effbf3',
-      'background-dark': '#e3efe7',
-      'primary': '#54cfba',
-      'secondary': '#bfdeed',
-      'accent': '#3185af',
-    },
+    colors: {
+      'text': '#f5fdff',
+      'background': '#011419',
+      'primary': '#9ce9fc',
+      'secondary': '#01242d',
+      'accent': '#06c4f4',
+     },
+     
     screens: {
       'xm': '600px',
       
       'sm': '1140px',
+
+      'm': '1570px'
     },
-    extend: {},
+    extend: {
+      animation: {
+        triangle: 'wiggle 1s ease-in-out infinite',
+        circle: 'bounce 3s ease-out infinite',
+        square: 'spin 4s ease-in-out infinite',
+      }
+    },
   },
   plugins: [],
 }
