@@ -6,11 +6,11 @@ module.exports = {
       'clean': ['Source Sans Pro', 'sans-serif']
     },
     colors: {
-      'text': '#f5fdff',
-      'background': '#011419',
-      'primary': '#9ce9fc',
-      'secondary': '#01242d',
-      'accent': '#06c4f4',
+      'text': '#f7edf7',
+      'background': '#160915',
+      'primary': '#c4a073',
+      'secondary': '#0b190b',
+      'accent': '#4773a9',
      },
      
     screens: {
