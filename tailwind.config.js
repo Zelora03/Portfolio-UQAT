@@ -2,16 +2,15 @@
 module.exports = {
   content: ["./src/**/*.{html,js}"],
   theme: {
-    fontFamily: {
-      'clean': ['Source Sans Pro', 'sans-serif']
-    },
+    
     colors: {
-      'text': '#f7edf7',
-      'background': '#160915',
-      'primary': '#c4a073',
-      'secondary': '#0b190b',
-      'accent': '#4773a9',
+      'text': '#dffbf7',
+      'background': '#031c18',
+      'primary': '#c41734',
+      'secondary': '#074038',
+      'accent': '#e62d4c',
      },
+     
      
     screens: {
       'xm': '600px',
