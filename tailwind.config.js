@@ -1,14 +1,20 @@
 /** @type {import('tailwindcss').Config} */
+const defaultTheme = require('tailwindcss/defaultTheme');
 module.exports = {
   content: ["./src/**/*.{html,js}"],
   theme: {
     
     colors: {
-      'text': '#dffbf7',
+      /*'text': '#dffbf7',
       'background': '#031c18',
       'primary': '#c41734',
       'secondary': '#074038',
-      'accent': '#e62d4c',
+      'accent': '#e62d4c',*/
+      'text': '#f6fefe',
+      'background': '#000000',
+      'primary': '#339e9e',
+      'secondary': '#061313',
+      'accent': '#718e8e',
      },
      
      
@@ -24,6 +30,9 @@ module.exports = {
         triangle: 'wiggle 1s ease-in-out infinite',
         circle: 'bounce 3s ease-out infinite',
         square: 'spin 4s ease-in-out infinite',
+      },
+      fontFamily: {
+        spartan: ['"League Spartan"', ...defaultTheme.fontFamily.sans]
       }
     },
   },
