@@ -19,7 +19,7 @@
 
 <body class="w-screen m-0 font-spartan overflow-x-hidden bg-background">
 
-    <div name="Menu" class="w-full fixed h-14 bg-background">
+    <div name="Menu" class="w-full fixed h-14 bg-background z-10">
         <div class="flex flex-col justify-between">
             <div class="h-[55px] flex justify-around items-center">
                 <div name="Logo" class="text-text w-1/2 flex items-center text-xl font-bold">
@@ -29,8 +29,8 @@
                 </div>
                 <div class="w-1/3 flex justify-around">
                     <div class="text-text w-1/3 flex justify-center ">Il s'agit d'un lien!</div>
-                    <div class="text-text w-1/3 flex justify-center">À propos</div>
-                    <div class="text-text w-1/3 flex justify-center">Mes pièces</div>
+                    <div class="text-text w-1/3 flex justify-center" onclick="document.getElementById('apropos').scrollIntoView();">À propos</div>
+                    <div class="text-text w-1/3 flex justify-center" onclick="document.getElementById('mespieces').scrollIntoView();">Mes pièces</div>
                 </div>
             </div>
             <div class="w-full h-[1px] bg-text"></div>
@@ -38,108 +38,168 @@
 
     </div>
 
-    <div name="Showcase" class="w-full h-screen flex justify-center items-center">
-        <div class="w-11/12 h-[95%] rounded-xl bg-no-repeat bg-cover bg-opacity-50 bg-background bg-blend-hue"
-            style="background-image:url(https://ipfs.pixura.io/ipfs/QmeyVETXA2PqNCXPeCpJYmWTdZvQAd8z4ouS9Pjw1NE5Ft);">
-            <div class="w-full h-full flex flex-col justify-center items-center">
-                <div class="text-9xl flex justify-center text-center font-thin text-text">Porfolio en conception de
-                </div>
-                <div class="text-9xl flex justify-center text-center font-normal tracking-widest text-text">jeux</div>
-            </div>
-        </div>
-
-    </div>
-
-    <div name="A propos" class="w-full h-fit mt-10 mb-20">
-        <div class="flex flex-col justify-center items-center">
-            <div name="APTitre" class="flex justify-center">
-                <div class="text-text text-5xl font-extrabold tracking-widest">À propos de moi...</div>
-            </div>
-            <div name="APElements" class="flex flex-col h-fit w-full justify-around items-center">
-                <div class="h-80 w-9/12 flex justify-around mt-10">
-                    <div class="h-full w-72 bg-text bg-opacity-10 rounded-lg">
-                        <div
-                            class="w-11/12 h-1/12 text-text text-center text-3xl tracking-widest font-extrabold mt-6 mb-6">
-                            Éducation
-                        </div>
-                        <div class="w-11/12 h-10/12 text-text text-justify text-xl font-semibold m-2">
-                            J'ai étudié au Collège de Bois-de-Boulogne à Montréal en Technique de l'informatique. C'est
-                            là que j'ai apprit la programmation orienté-objet ainsi que le développement web.
-                        </div>
+    <div class="z-0">
+        <div name="Showcase" class="w-full h-screen flex justify-center items-center">
+            <div class="w-full h-full rounded-xl bg-no-repeat bg-cover bg-opacity-50 bg-background bg-blend-hue"
+                style="background-image:url(https://ipfs.pixura.io/ipfs/QmeyVETXA2PqNCXPeCpJYmWTdZvQAd8z4ouS9Pjw1NE5Ft);">
+                <div class="w-full h-full flex flex-col justify-center items-center">
+                    <div class="text-9xl flex justify-center text-center font-thin text-text">Porfolio en conception de
                     </div>
-                    <div class="h-full w-72 bg-text bg-opacity-10 rounded-lg">
-                        <div
-                            class="w-11/12 h-1/12 text-text text-center text-3xl tracking-widest font-extrabold mt-6 mb-6">
-                            Création
-                        </div>
-                        <div class="w-11/12 h-10/12 text-text text-justify text-xl font-semibold m-2">
-                            Cela fait depuis 6 ans que je produis des jeux-vidéos. Dans mon secondaire, je le faisais
-                            pour le plaisir de la création. Au cégep, j'utilise ce medium afin de produire mes travaux
-                            pratiques.
-                        </div>
-                    </div>
-                    <div class="h-full w-72 bg-text bg-opacity-10 rounded-lg">
-                        <div
-                            class="w-11/12 h-1/12 text-text text-center text-3xl tracking-widest font-extrabold mt-6 mb-6">
-                            Passions
-                        </div>
-                        <div class="w-11/12 h-10/12 text-text text-justify text-xl font-semibold m-2">
-                            Je suis passionné par le game design, les jeux vidéos, les jeux de plateau, les jeux de rôle
-                            (Donjons et Dragons) et le théâtre.
-                        </div>
-                    </div>
+                    <div class="text-9xl flex justify-center text-center font-normal tracking-widest text-text">jeux</div>
                 </div>
             </div>
+    
         </div>
-    </div>
-
-    <div name="Pieces" class="w-full h-fit m-5">
-        <div name="PTitre" class="flex justify-center">
-            <div class="text-text text-5xl font-extrabold tracking-widest">Mes pièces</div>
-        </div>
-        <div name="PieceType" class="w-full h-fit">
-            <div name="Indicateur" class="w-[20%] flex ml-28 items-center">
-                <div name="Icon" class="h-5 w-5 rotate-12 bg-primary m-5">
-
+    
+        <div name="A propos" class="w-full h-fit mt-10 mb-20" id="apropos">
+            <div class="flex flex-col justify-center items-center">
+                <div name="APTitre" class="flex justify-center">
+                    <div class="text-text text-5xl font-extrabold tracking-widest">À propos de moi...</div>
                 </div>
-                <div name="NomType" class="text-text text-4xl">
-                    Jeux vidéos
-                </div>
-            </div>
-            <div class="w-full h-fit flex justify-center">
-                <div class="w-11/12 h-72 flex justify-center items-center">
-                    <div onclick="cliquePiece('StackOverBros')" class="w-[30%] h-full mr-5 cursor-pointer"
-                        style="background-image:url(https://ipfs.pixura.io/ipfs/QmeyVETXA2PqNCXPeCpJYmWTdZvQAd8z4ouS9Pjw1NE5Ft);">
-                        <div
-                            class="group w-full h-full bg-[#000000] bg-opacity-0 flex justify-center items-center transition-all hover:bg-opacity-70">
+                <div name="APElements" class="flex flex-col h-fit w-full justify-around items-center">
+                    <div class="h-80 w-9/12 flex justify-around mt-10">
+                        <div class="h-full w-72 bg-background-light rounded-lg transition-transform scale-100 hover:rotate-6 hover:scale-105">
                             <div
-                                class="text-text text-4xl opacity-0 font-semibold tracking-widest group-hover:opacity-100">
-                                StackOverBros</div>
+                                class="w-11/12 h-1/12 text-text text-center text-3xl tracking-widest font-extrabold mt-6 mb-6">
+                                Éducation
+                            </div>
+                            <div class="w-11/12 h-10/12 text-text text-justify text-xl m-2">
+                                J'ai étudié au Collège de Bois-de-Boulogne à Montréal en Technique de l'informatique. C'est
+                                là que j'ai apprit la programmation orienté-objet ainsi que le développement web.
+                            </div>
                         </div>
-                    </div>
-                    <div onclick="cliquePiece('Lunar Strike')" class="w-[30%] h-full mr-5 cursor-pointer"
-                        style="background-image:url(https://ipfs.pixura.io/ipfs/QmeyVETXA2PqNCXPeCpJYmWTdZvQAd8z4ouS9Pjw1NE5Ft);">
-                        <div
-                            class="group w-full h-full bg-[#000000] bg-opacity-0 flex justify-center items-center transition-all hover:bg-opacity-70">
+                        <div class="h-full w-72 bg-background-light rounded-lg transition-transform scale-100 hover:rotate-6 hover:scale-105">
                             <div
-                                class="text-text text-4xl opacity-0 font-semibold tracking-widest group-hover:opacity-100">
-                                Lunar Strike</div>
+                                class="w-11/12 h-1/12 text-text text-center text-3xl tracking-widest font-extrabold mt-6 mb-6">
+                                Création
+                            </div>
+                            <div class="w-11/12 h-10/12 text-text text-justify text-xl m-2">
+                                Cela fait depuis 6 ans que je produis des jeux-vidéos. Dans mon secondaire, je le faisais
+                                pour le plaisir de la création. Au cégep, j'utilise ce medium afin de produire mes travaux
+                                pratiques.
+                            </div>
                         </div>
-                    </div>
-                    <div onclick="cliquePiece('Swift Shift')" class="w-[30%] h-full mr-5 cursor-pointer"
-                        style="background-image:url(https://ipfs.pixura.io/ipfs/QmeyVETXA2PqNCXPeCpJYmWTdZvQAd8z4ouS9Pjw1NE5Ft);">
-                        <div
-                            class="group w-full h-full bg-[#000000] bg-opacity-0 flex justify-center items-center transition-all hover:bg-opacity-70">
+                        <div class="h-full w-72 bg-background-light rounded-lg transition-transform scale-100 hover:rotate-6 hover:scale-105">
                             <div
-                                class="text-text text-4xl opacity-0 font-semibold tracking-widest group-hover:opacity-100">
-                                Swift Shift</div>
+                                class="w-11/12 h-1/12 text-text text-center text-3xl tracking-widest font-extrabold mt-6 mb-6">
+                                Passions
+                            </div>
+                            <div class="w-11/12 h-10/12 text-text text-justify text-xl m-2">
+                                Je suis passionné par le game design, les jeux vidéos, les jeux de plateau, les jeux de rôle
+                                (Donjons et Dragons) et le théâtre.
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-
+        </div>
+    
+        <div name="Pieces" class="w-full h-fit m-5" id="mespieces">
+            <div name="PTitre" class="flex justify-center">
+                <div class="text-text text-5xl font-extrabold tracking-widest">Mes pièces</div>
+            </div>
+            <div name="PieceType" class="w-full h-fit mt-5">
+                <div name="Indicateur" class="w-[20%] flex ml-28 items-center">
+                    <div name="Icon" class="h-5 w-5 rotate-12 bg-primary m-5">
+    
+                    </div>
+                    <div name="NomType" class="text-text text-4xl">
+                        Jeux vidéos
+                    </div>
+                </div>
+                <div class="w-full h-fit flex justify-center">
+                    <div class="w-11/12 h-72 flex justify-left ml-28 items-center">
+                        <div onclick="cliquePiece('StackOverBros')" class="w-[30%] h-full mr-5 cursor-pointer rounded-3xl"
+                            style="background-image:url(https://ipfs.pixura.io/ipfs/QmeyVETXA2PqNCXPeCpJYmWTdZvQAd8z4ouS9Pjw1NE5Ft);">
+                            <div
+                                class="group w-full h-full bg-[#000000] rounded-3xl bg-opacity-0 flex justify-center items-center transition-all hover:bg-opacity-70">
+                                <div
+                                    class="text-text text-4xl opacity-0 font-semibold tracking-widest group-hover:opacity-100">
+                                    StackOverBros</div>
+                            </div>
+                        </div>
+                        <div onclick="cliquePiece('Lunar Strike')" class="w-[30%] h-full mr-5 cursor-pointer rounded-3xl"
+                            style="background-image:url(https://ipfs.pixura.io/ipfs/QmeyVETXA2PqNCXPeCpJYmWTdZvQAd8z4ouS9Pjw1NE5Ft);">
+                            <div
+                                class="group w-full h-full bg-[#000000] rounded-3xl bg-opacity-0 flex justify-center items-center transition-all hover:bg-opacity-70">
+                                <div
+                                    class="text-text text-4xl opacity-0 font-semibold tracking-widest group-hover:opacity-100">
+                                    Lunar Strike</div>
+                            </div>
+                        </div>
+                        <div onclick="cliquePiece('Swift Shift')" class="w-[30%] h-full mr-5 cursor-pointer rounded-3xl"
+                            style="background-image:url(https://ipfs.pixura.io/ipfs/QmeyVETXA2PqNCXPeCpJYmWTdZvQAd8z4ouS9Pjw1NE5Ft);">
+                            <div
+                                class="group w-full h-full bg-[#000000] rounded-3xl bg-opacity-0 flex justify-center items-center transition-all hover:bg-opacity-70">
+                                <div
+                                    class="text-text text-4xl opacity-0 font-semibold tracking-widest group-hover:opacity-100">
+                                    Swift Shift</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+            </div>
+            <div name="PieceType" class="w-full h-fit mt-5">
+                <div name="Indicateur" class="w-[20%] flex ml-28 items-center">
+                    <div name="Icon" class="h-5 w-5 rotate-12 bg-primary m-5">
+    
+                    </div>
+                    <div name="NomType" class="text-text text-4xl">
+                        Textes
+                    </div>
+                </div>
+                <div class="w-full h-fit flex justify-center">
+                    <div class="w-11/12 h-72 flex justify-left ml-28 items-center">
+                        <div onclick="cliquePiece('StackOverBros')" class="w-[30%] h-full mr-5 cursor-pointer rounded-3xl"
+                            style="background-image:url(https://ipfs.pixura.io/ipfs/QmeyVETXA2PqNCXPeCpJYmWTdZvQAd8z4ouS9Pjw1NE5Ft);">
+                            <div
+                                class="group w-full h-full bg-[#000000] rounded-3xl bg-opacity-0 flex justify-center items-center transition-all hover:bg-opacity-70">
+                                <div
+                                    class="text-text text-4xl opacity-0 font-semibold tracking-widest group-hover:opacity-100">
+                                    StackOverBros</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+            </div>
+            <div name="PieceType" class="w-full h-fit mt-5">
+                <div name="Indicateur" class="w-[20%] flex ml-28 items-center">
+                    <div name="Icon" class="h-5 w-5 rotate-12 bg-primary m-5">
+    
+                    </div>
+                    <div name="NomType" class="text-text text-4xl">
+                        Autres
+                    </div>
+                </div>
+                <div class="w-full h-fit flex justify-center">
+                    <div class="w-11/12 h-72 flex justify-left ml-28 items-center">
+                        <div onclick="cliquePiece('StackOverBros')" class="w-[30%] h-full mr-5 cursor-pointer rounded-3xl"
+                            style="background-image:url(https://ipfs.pixura.io/ipfs/QmeyVETXA2PqNCXPeCpJYmWTdZvQAd8z4ouS9Pjw1NE5Ft);">
+                            <div
+                                class="group w-full h-full bg-[#000000] rounded-3xl bg-opacity-0 flex justify-center items-center transition-all hover:bg-opacity-70">
+                                <div
+                                    class="text-text text-4xl opacity-0 font-semibold tracking-widest group-hover:opacity-100">
+                                    StackOverBros</div>
+                            </div>
+                        </div>
+                        <div onclick="cliquePiece('Lunar Strike')" class="w-[30%] h-full mr-5 cursor-pointer rounded-3xl"
+                            style="background-image:url(https://ipfs.pixura.io/ipfs/QmeyVETXA2PqNCXPeCpJYmWTdZvQAd8z4ouS9Pjw1NE5Ft);">
+                            <div
+                                class="group w-full h-full bg-[#000000] rounded-3xl bg-opacity-0 flex justify-center items-center transition-all hover:bg-opacity-70">
+                                <div
+                                    class="text-text text-4xl opacity-0 font-semibold tracking-widest group-hover:opacity-100">
+                                    Lunar Strike</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+            </div>
         </div>
     </div>
+    
 
     
 </body>
